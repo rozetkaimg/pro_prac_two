@@ -8,8 +8,6 @@
 #include <cmath>
 #include <sstream>
 #include <iomanip>
-
-
 namespace ScoreProcessing {
 struct NormalizationParams {
     double percentage_increase_factor;

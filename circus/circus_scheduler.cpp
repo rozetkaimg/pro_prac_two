@@ -1,13 +1,7 @@
-//
-// Created by Stanislav Klepikov on 02.06.2025.
-//
-
 #include "circus_scheduler.h"
 #include <algorithm>
 #include <iostream>
 #include <iomanip>
-
-
 bool artist_has_required_skills(const Artist &artist, const ShowAct &act) {
     if (act.required_skills.empty()) {
         return true;
@@ -18,8 +12,6 @@ bool artist_has_required_skills(const Artist &artist, const ShowAct &act) {
                                   end();
                        });
 }
-
-
 void form_cast_for_evening_show(std::vector<Artist> &all_artists, std::vector<ShowAct> &show_program) {
     for (ShowAct &act: show_program) {
         act.status = "Ожидает";
